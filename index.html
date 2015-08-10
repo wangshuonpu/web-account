@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <!--<link href="src/css/reset.css" rel="stylesheet" type="text/css">-->
     <link href="src/css/index.css" rel="stylesheet" type="text/css">
+    <link href="src/css/common.css" rel="stylesheet" type="text/css">
     <script src="dep/director.min.js" type="text/javascript"></script>
     <title>首页</title>
 </head>
@@ -14,14 +15,17 @@
     <a href="#share"><span class="icon-share"></span></a>
 </div>
 <!--<div class="viewport">-->
-<div id="main">
-    收入：1000元<br>
-    支出：500元<br>
-    本月总计：500元<br>
-    <span class="slogan">————&nbsp;&nbsp;&nbsp;I choose to be happy&nbsp;&nbsp;&nbsp;————</span>
+<div class="index-main" class="top50">
+    <div class="content">
+        <p>收入：<span id="income">1000元</span></p>
+        <p>支出：<span id="expense">500元</span></p>
+        <p>本月总计：<span id="total">500元</span></p>
+        <p class="slogan">————&nbsp;&nbsp;&nbsp;I choose to be happy&nbsp;&nbsp;&nbsp;————</p>
+    </div>
+    
 </div>
 <img src="src/css/img/home_life.jpg" id="img">
-<a class="edit" href="edit.html">记一笔</a>
+<a class="edit-btn" href="edit.html">记一笔</a>
 <!--</div>-->
 </body>
 <!--<script>-->

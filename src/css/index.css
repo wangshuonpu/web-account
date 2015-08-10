@@ -1,42 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: sans-serif;
-    background-color: #feffea;
-}
-
-.header {
-    line-height: 50px;
-    background-color: #cfe7e7;
-    color: #59c0bf;
-    font-size: 24px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%
-}
-
-.edit {
-    display: block;
-    line-height: 47px;
-    font-size: 24px;
-    background-color: #d7e6ad;
-    text-decoration: none;
-    color: #000;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%
-}
-
-#main {
-    line-height: 24px;
-    font-size: 16px;
-    color: #c2b897;
-    margin-top: 145px;
-    margin-bottom: 24px;
-}
 
 #img {
     display: block;
@@ -49,4 +10,21 @@ body {
     font-size: 12px;
     font-family: cursive;
     line-height: 48px;
+}
+.content{
+    width: 524px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content p{
+    color: #c2b897;
+}
+.index-main{
+    line-height: 24px;
+    font-size: 16px;
+    color: #7d7d7d;
+    margin-top: 100px;
+    margin-bottom: 24px;
+    width: 100%;
+
 }
