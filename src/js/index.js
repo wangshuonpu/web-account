@@ -1,9 +1,10 @@
 /**
-* 移动记账本首页
-* @author linjing03
+ * 移动记账本首页
+ * @author linjing03
+ *         wangshuo16
 */
 
-define(function (require, exports, moudles) {
+define(function () {
     var local = localStorage;
     var nodes = [];
 
@@ -12,23 +13,25 @@ define(function (require, exports, moudles) {
     * 获取消费情况
     */
     function getCost() {
-        var sum = 0;
+        var total = 0;
         var income = 0;
         var expense = 0;
 
-        var list = local.getItem('list');
-        for (var i = 0, len = list.length; i < len; i ++) {
-            if (list[i].type === 'income') {
-                income += parseInt(list[i].income);
+        var list = JSON.parse(local.getItem('list'));
+        if(list){
+            for (var i = 0, len = list.length; i < len; i ++) {
+                if (list[i].type === 'income') {
+                    income += parseInt(list[i].number);
+                }
+                else if (list[i].type === 'expense') {
+                    expense += parseInt(list[i].number);
+                }
             }
-            else if (list[i].type === 'expense') {
-                expense += parseInt(list[i].expense);
-            }
+            total = income - expense;
         }
-        sum = income - expense;
 
         return {
-            sum: sum,
+            total: total,
             income: income,
             expense: expense
         }
