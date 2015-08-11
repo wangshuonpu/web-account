@@ -1,0 +1,39 @@
+
+######## 移动记账本字段设置#######
+1.
+总收入 income
+总支出 expense
+
+2.
+支出收入类别
+餐饮：food
+购物: shopping
+酒店：hotel
+交通：transtation
+娱乐：enternment
+通讯：phoneFee
+医疗：hospital
+投资理财：investion
+
+工资：salary
+投资收入：investIncome
+兼职收入：extraSalary
+红包：bonus
+其他: others
+
+3. 记一笔时 
+需要记录如下数据：
+id: t + 时间戳 //之所以加t是因为 防止系统将时间戳看成number类型的数据 ；
+type: 支出为expense 收入为income
+类别：对应2；
+钱数: 精确到小数点后一位
+备注：msg //备注信息;
+
+###时间细分下 方便读取；
+
+月：存储月
+日：存储日
+
+
+
+
