@@ -35,13 +35,15 @@ body {
     overflow: hidden;
 }
 
-
 .item-bg {
     height: 57px;
     width: 57px;
     background-color: #59c0bf;
     border-radius: 50%;
     margin-bottom: 5px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 57px;
 }
 
 .classify-list:after {

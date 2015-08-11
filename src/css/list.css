@@ -24,7 +24,7 @@
 
 .part{
     float: left;
-    width: 40%;
+    width: 43%;
 }
 .direction-right{
     position: absolute;
@@ -94,6 +94,11 @@
     color: #01b112;
 }
 
+.icon-pie-chart {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
 
 
 
