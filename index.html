@@ -25,14 +25,14 @@
 
 </div>
 <img src="src/css/img/home_life.jpg" id="img">
-<a class="edit-btn" href="edit.html">记一笔</a>js
+<a class="edit-btn" href="edit.html">记一笔</a>
 </body>
-<script src='src/js/common/sea.js's></script>
+<script src='dep/sea.js'></script>
 <script>
     seajs.config({
-        base: 'src/js/'
+        base: 'src/',
         alias: {
-            'zepto': 'common/zepto.js'
+            'zepto': '../dep/zepto.js'
         }
     })
     seajs.use('index.js');
